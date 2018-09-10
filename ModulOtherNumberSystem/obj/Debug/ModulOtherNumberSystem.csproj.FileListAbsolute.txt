@@ -1,0 +1,7 @@
+C:\Users\Giro\source\repos\ModulOtherNumberSystem\ModulOtherNumberSystem\obj\Debug\ModulOtherNumberSystem.csprojAssemblyReference.cache
+C:\Users\Giro\source\repos\ModulOtherNumberSystem\ModulOtherNumberSystem\obj\Debug\ModulOtherNumberSystem.csproj.CoreCompileInputs.cache
+C:\Users\Giro\source\repos\ModulOtherNumberSystem\ModulOtherNumberSystem\bin\Debug\ModulOtherNumberSystem.exe.config
+C:\Users\Giro\source\repos\ModulOtherNumberSystem\ModulOtherNumberSystem\bin\Debug\ModulOtherNumberSystem.exe
+C:\Users\Giro\source\repos\ModulOtherNumberSystem\ModulOtherNumberSystem\bin\Debug\ModulOtherNumberSystem.pdb
+C:\Users\Giro\source\repos\ModulOtherNumberSystem\ModulOtherNumberSystem\obj\Debug\ModulOtherNumberSystem.exe
+C:\Users\Giro\source\repos\ModulOtherNumberSystem\ModulOtherNumberSystem\obj\Debug\ModulOtherNumberSystem.pdb

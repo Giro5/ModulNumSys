@@ -70,7 +70,7 @@ namespace ModulOtherNumberSystem
                 Console.WriteLine($"А) {c1.n} в СС {c1.i}");
                 Console.WriteLine($"В) {c2.n} в СС {c2.i}");
                 Console.WriteLine("Введите код операции для ее исполнения, через пробел укажите желаймую систему счисления.");
-                Console.Write("1 - Сумма двух чисел\n2 - Вычитание двух чисел\n3 - Умножение двух чисел\n4 - Деление двух чисел\n5 - Перевод в любую систему счисления\n6 - Отношение двух чисел\n7 - Изменить числа\nВаш код - ");
+                Console.Write("1 - Сумма двух чисел\n2 - Вычитание двух чисел\n3 - Умножение двух чисел\n4 - Деление двух чисел\n5 - Перевод в любую систему счисления\n6 - Отношение двух чисел\n7 - Изменить числа\n8 - Выход из программы\nВаш код - ");
                 string str = Convert.ToString(Console.ReadLine());
                 c3 = new NumSys { n = str.Split(' ')[0] };
                 try
@@ -96,7 +96,7 @@ namespace ModulOtherNumberSystem
                         Console.WriteLine($"Деление двух чисел равно: {c1.ToAnySys(c1.Divide(c1, c2), c3.i).n} в СС {c3.i}");
                         break;
                     case "5":
-                        Console.WriteLine($"Числа в {c3.i} системе счисления равны: {c1.ToAnySys(c1, c3.i)}, {c2.ToAnySys(c2, c3.i)}");
+                        Console.WriteLine($"Числа в {c3.i} системе счисления равны: {c1.ToAnySys(c1, c3.i).n}, {c2.ToAnySys(c2, c3.i).n}");
                         break;
                     case "6":
                         Console.WriteLine($"Отношения двух чисел таковы:\nA == B - {c1.Eq(c1, c2)}\nA != B - {c1.NoEq(c1, c2)}\nA >= B - {c1.GrEq(c1, c2)}\nA <= B - {c1.LsEq(c1, c2)}\nA > B - {c1.Gr(c1, c2)}\nA < B - {c1.Ls(c1, c2)}");
@@ -104,6 +104,8 @@ namespace ModulOtherNumberSystem
                     case "7":
                         def = true;
                         break;
+                    case "8":
+                        return;
                 }
                 if (def)
                 {

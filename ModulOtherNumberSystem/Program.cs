@@ -60,13 +60,12 @@ namespace ModulOtherNumberSystem
                     }
                 }
             }
-            Console.Clear();
         }
         static void Main(string[] args)
         {
-            bool def = false;
-            for (Definition(); true; Console.Clear())
+            for (Definition(); ;)
             {
+                Console.Clear();
                 Console.WriteLine($"А) {c1.n} в СС {c1.i}");
                 Console.WriteLine($"В) {c2.n} в СС {c2.i}");
                 Console.WriteLine("Введите код операции для ее исполнения, через пробел укажите желаймую систему счисления.");
@@ -102,20 +101,11 @@ namespace ModulOtherNumberSystem
                         Console.WriteLine($"Отношения двух чисел таковы:\nA == B - {c1.Eq(c1, c2)}\nA != B - {c1.NoEq(c1, c2)}\nA >= B - {c1.GrEq(c1, c2)}\nA <= B - {c1.LsEq(c1, c2)}\nA > B - {c1.Gr(c1, c2)}\nA < B - {c1.Ls(c1, c2)}");
                         break;
                     case "7":
-                        def = true;
+                        Definition();
                         break;
                 }
-                if (def)
-                {
-                    Definition();
-                    def = false;
-                }
-                else
-                {
-                    Console.Write("Для продолжения нажмите любую кнопку.");
-                    Console.ReadKey();
-                }
-
+                Console.Write("Для продолжения нажмите любую кнопку.");
+                Console.ReadKey();
             }
         }
 

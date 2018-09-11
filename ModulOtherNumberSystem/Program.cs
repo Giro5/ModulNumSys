@@ -29,21 +29,10 @@ namespace ModulOtherNumberSystem
                 }
                 for (int i = 0; i < c1.n.Length; i++)
                 {
-                    if (!char.IsLetter(c1.n[i]))
+                    if ((!char.IsLetter(c1.n[i]) && Convert.ToInt32(c1.n[i].ToString()) >= c1.i) || c1.n[i] - 55 >= c1.i)
                     {
-                        if (Convert.ToInt32(c1.n[i].ToString()) >= c1.i)
-                        {
-                            b = true;
-                            Console.WriteLine("Число введенно не корректно, повторите ввод.");
-                        }
-                    }
-                    else
-                    {
-                        if(c1.n[i] - 55 >= c1.i)
-                        {
-                            b = true;
-                            Console.WriteLine("Число введенно не корректно, повторите ввод.");
-                        }
+                        b = true;
+                        Console.WriteLine("Число введенно не корректно, повторите ввод.");
                     }
                 }
             }
@@ -64,21 +53,10 @@ namespace ModulOtherNumberSystem
                 }
                 for (int i = 0; i < c2.n.Length; i++)
                 {
-                    if (!char.IsLetter(c2.n[i]))
+                    if ((!char.IsLetter(c2.n[i]) && Convert.ToInt32(c2.n[i].ToString()) >= c2.i) || c2.n[i] - 55 >= c2.i)
                     {
-                        if (Convert.ToInt32(c2.n[i].ToString()) >= c2.i)
-                        {
-                            b = true;
-                            Console.WriteLine("Число введенно не корректно, повторите ввод.");
-                        }
-                    }
-                    else
-                    {
-                        if (c2.n[i] - 55 >= c2.i)
-                        {
-                            b = true;
-                            Console.WriteLine("Число введенно не корректно, повторите ввод.");
-                        }
+                        b = true;
+                        Console.WriteLine("Число введенно не корректно, повторите ввод.");
                     }
                 }
             }

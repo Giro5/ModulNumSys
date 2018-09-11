@@ -12,3 +12,10 @@ C:\Users\nikit\source\repos\ModulNumSys\ModulOtherNumberSystem\obj\Debug\ModulOt
 C:\Users\nikit\source\repos\ModulNumSys\ModulOtherNumberSystem\obj\Debug\ModulOtherNumberSystem.csproj.CoreCompileInputs.cache
 C:\Users\nikit\source\repos\ModulNumSys\ModulOtherNumberSystem\obj\Debug\ModulOtherNumberSystem.exe
 C:\Users\nikit\source\repos\ModulNumSys\ModulOtherNumberSystem\obj\Debug\ModulOtherNumberSystem.pdb
+C:\Users\Giro\source\repos\ModulNumSys\ModulOtherNumberSystem\bin\Debug\ModulOtherNumberSystem.exe.config
+C:\Users\Giro\source\repos\ModulNumSys\ModulOtherNumberSystem\bin\Debug\ModulOtherNumberSystem.exe
+C:\Users\Giro\source\repos\ModulNumSys\ModulOtherNumberSystem\bin\Debug\ModulOtherNumberSystem.pdb
+C:\Users\Giro\source\repos\ModulNumSys\ModulOtherNumberSystem\obj\Debug\ModulOtherNumberSystem.csprojAssemblyReference.cache
+C:\Users\Giro\source\repos\ModulNumSys\ModulOtherNumberSystem\obj\Debug\ModulOtherNumberSystem.csproj.CoreCompileInputs.cache
+C:\Users\Giro\source\repos\ModulNumSys\ModulOtherNumberSystem\obj\Debug\ModulOtherNumberSystem.exe
+C:\Users\Giro\source\repos\ModulNumSys\ModulOtherNumberSystem\obj\Debug\ModulOtherNumberSystem.pdb

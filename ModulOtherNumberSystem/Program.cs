@@ -29,10 +29,21 @@ namespace ModulOtherNumberSystem
                 }
                 for (int i = 0; i < c1.n.Length; i++)
                 {
-                    if (Convert.ToInt32(c1.n[i].ToString()) >= c1.i)
+                    if (!char.IsLetter(c1.n[i]))
                     {
-                        b = true;
-                        Console.WriteLine("Число введенно не корректно, повторите ввод.");
+                        if (Convert.ToInt32(c1.n[i].ToString()) >= c1.i)
+                        {
+                            b = true;
+                            Console.WriteLine("Число введенно не корректно, повторите ввод.");
+                        }
+                    }
+                    else
+                    {
+                        if(c1.n[i] - 55 >= c1.i)
+                        {
+                            b = true;
+                            Console.WriteLine("Число введенно не корректно, повторите ввод.");
+                        }
                     }
                 }
             }
@@ -53,10 +64,21 @@ namespace ModulOtherNumberSystem
                 }
                 for (int i = 0; i < c2.n.Length; i++)
                 {
-                    if (Convert.ToInt32(c2.n[i].ToString()) >= c2.i)
+                    if (!char.IsLetter(c2.n[i]))
                     {
-                        b = true;
-                        Console.WriteLine("Число введенно не корректно, повторите ввод.");
+                        if (Convert.ToInt32(c2.n[i].ToString()) >= c2.i)
+                        {
+                            b = true;
+                            Console.WriteLine("Число введенно не корректно, повторите ввод.");
+                        }
+                    }
+                    else
+                    {
+                        if (c2.n[i] - 55 >= c2.i)
+                        {
+                            b = true;
+                            Console.WriteLine("Число введенно не корректно, повторите ввод.");
+                        }
                     }
                 }
             }
@@ -70,7 +92,7 @@ namespace ModulOtherNumberSystem
                 Console.WriteLine($"А) {c1.n} в СС {c1.i}");
                 Console.WriteLine($"В) {c2.n} в СС {c2.i}");
                 Console.WriteLine("Введите код операции для ее исполнения, через пробел укажите желаймую систему счисления.");
-                Console.Write("1 - Сумма двух чисел\n2 - Вычитание двух чисел\n3 - Умножение двух чисел\n4 - Деление двух чисел\n5 - Перевод в любую систему счисления\n6 - Отношение двух чисел\n7 - Изменить числа\n8 - Выход из программы\nВаш код - ");
+                Console.Write("1 - Сумма двух чисел\n2 - Вычитание двух чисел\n3 - Умножение двух чисел\n4 - Деление двух чисел\n5 - Перевод в любую систему счисления\n6 - Отношение двух чисел\n7 - Изменить числа\nВаш код - ");
                 string str = Convert.ToString(Console.ReadLine());
                 c3 = new NumSys { n = str.Split(' ')[0] };
                 try
@@ -104,8 +126,6 @@ namespace ModulOtherNumberSystem
                     case "7":
                         def = true;
                         break;
-                    case "8":
-                        return;
                 }
                 if (def)
                 {
